@@ -1,14 +1,17 @@
 package com.krzywdek19.cryptoFollower.crypto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.HashMap;
-import java.util.Map;
 
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class CryptoCurrencyDetailsDTO {
     private String id;
     private String symbol;
     private String name;
-    private Map<String, Double> currentPrice = new HashMap<String, Double>();
+    private Double current_price;
 }
